@@ -1,6 +1,11 @@
+import { useNavigate } from "react-router-dom";
+import { Url } from "../../constants/url";
+
 function Home() {
+    const navigate = useNavigate();
     return (
-        <div className="Home">
+        <div className="login">login
+            <button onClick={() => navigate(Url.home)} >Login</button>
         </div>
     );
 }
